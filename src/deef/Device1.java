@@ -7,20 +7,22 @@ import java.util.List;
 
 
 public class Device1 {
+    //GLOBAL LIST TO STORE RECEIVED VECTOR
     public static List<int[]> myList = new ArrayList<int[]>();
 
     public static void main(String[] args) {
-        //Define
+        //DEFINE
         int vec1[] = new int[3];
         int i;
 
 
-        //Initialization
+        //INITIALIZATION
         for (i = 0; i < vec1.length; i++) {
             vec1[i] = 5 * i;
         }
+        int port1 = 5000;
 
-        //TEST PRINT LIST
+        //TEST PRINT by Thread LIST(STORING RECEIVED ARRAY)
         (new Thread(new Runnable() {
             @Override
             public void run() {
@@ -40,15 +42,18 @@ public class Device1 {
         System.out.println("Outside thread...");
 
         //RECEIVE & ADDLIST
-        try (DatagramSocket socket = new DatagramSocket(5000)) {
+        try (DatagramSocket socket = new DatagramSocket(port1)) {
             System.out.println("Running Receive Thread");
+            //RECEIVE THREAD RUN
             Recieve rec = new Recieve(socket);
             rec.run();
         } catch (IOException e) {
             System.out.println("Server exception :" + e.getMessage());
         }
 
-        //MODIFY
+        //CHOOSE
+
+        //MODIFY VECTOR
 
     }
 
