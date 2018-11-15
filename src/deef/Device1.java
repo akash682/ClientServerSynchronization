@@ -45,10 +45,9 @@ public class Device1 {
         try (DatagramSocket socket = new DatagramSocket(port1)) {
             System.out.println("Running Receive Thread");
             //RECEIVE THREAD RUN
-            while(true) {
-                Recieve rec = new Recieve(socket);
-                rec.run();
-            }
+            Recieve rec = new Recieve(socket);
+            rec.run();
+
         } catch (IOException e) {
             System.out.println("Server exception :" + e.getMessage());
         }

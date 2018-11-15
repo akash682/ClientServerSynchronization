@@ -20,28 +20,29 @@ class Recieve implements Runnable {
     @Override
     public void run() {
         try {
-            //PREPARE THE BUFFER TO RECIEVE
-            byte[] buffer = new byte[3 * 4];
-            DatagramPacket packet = new DatagramPacket(buffer, buffer.length);
-            //RECEIVE
-            socket.receive(packet);
+            while (true) {
+                //PREPARE THE BUFFER TO RECIEVE
+                byte[] buffer = new byte[3 * 4];
+                DatagramPacket packet = new DatagramPacket(buffer, buffer.length);
+                //RECEIVE
+                socket.receive(packet);
 
-            //Convert byte[] to int[]
-            Convert con = new Convert();
-            rec_vec = con.bytesToInts(buffer);
+                //Convert byte[] to int[]
+                Convert con = new Convert();
+                rec_vec = con.bytesToInts(buffer);
 
-            //ADD TO GLOBAL LIST
-            Device1.myList.add(rec_vec);
+                //ADD TO GLOBAL LIST
+                Device1.myList.add(rec_vec);
 
-            System.out.println("Added Vector to list");
-
-
+                System.out.println("Added Vector to list");
+            }
         } catch (SocketException e) {
             System.out.println("SocketException: " + e.getMessage());
         } catch (IOException e) {
             System.out.println("IOException: " + e.getMessage());
         }
     }
-
-
 }
+
+
+
