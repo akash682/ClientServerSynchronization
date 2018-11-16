@@ -1,4 +1,4 @@
-package deef;
+package deef.Assignment2;
 
 import java.nio.ByteBuffer;
 import java.nio.IntBuffer;
@@ -7,7 +7,7 @@ public class Convert {
     // TO USE UDP DATAPACKET
     //Convert int[] to byte[]
     public static byte[] intsToBytes(int[] ints){
-        ByteBuffer bb = ByteBuffer.allocate(3*4);
+        ByteBuffer bb = ByteBuffer.allocate(4*4);
         IntBuffer ib = bb.asIntBuffer();
         for(int i=0; i<ints.length; i++){
             ib.put(ints[i]);
