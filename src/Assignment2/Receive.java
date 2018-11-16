@@ -31,7 +31,7 @@ class Recieve implements Runnable {
                 socket.receive(packet);
 
                 //Convert byte[] to int[]
-                deef.Assignment2.Convert con = new deef.Assignment2.Convert();
+                Convert con = new Convert();
                 rec_vec = con.bytesToInts(buffer);
 
                 if (rec_vec != null) {

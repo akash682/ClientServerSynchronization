@@ -1,4 +1,4 @@
-package deef.Assignment2;
+package Assignment2;
 
 import java.nio.ByteBuffer;
 import java.nio.IntBuffer;

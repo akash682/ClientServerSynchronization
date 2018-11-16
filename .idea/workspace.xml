@@ -2,28 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7cc661d0-2809-4fbf-a67f-858e0b1b5966" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assignment3/Process0.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assignment3/Process1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assignment3/Process3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assignment3/Readfile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assignment3/Receive.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assignment3/Send.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project2/deef/Convert.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project2/deef/Device1$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project2/deef/Device1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project2/deef/Device2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project2/deef/Device3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project2/deef/Recieve.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project2/deef/Send.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/deef/Assignment2/Convert.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/deef/Assignment2/Send.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/deef/Check.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/deef/Check2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/deef/Choose.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/deef/Device1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/deef/Device2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/deef/Device3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/deef/MAIN.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/deef/Receive.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/deef/printlist.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/deef/printlist_copy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project2/Assignment2/Choose.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project2/Assignment2/Recieve.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project2/Assignment2/Recieve.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project2/Assignment2/Send.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project2/deef/Assignment2/Convert.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Assignment2/Convert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assignment2/Convert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Assignment2/Receive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assignment2/Receive.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -78,24 +69,24 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="4819" />
+          <entry key="java" value="5999" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4819" />
+          <entry key="JAVA" value="5999" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="4" />
-          <entry key="java" value="86" />
+          <entry key="java" value="182" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="4" />
-          <entry key="JAVA" value="86" />
+          <entry key="JAVA" value="182" />
         </counts>
       </usages-collector>
     </session>
@@ -103,55 +94,73 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Assignment2/Choose.java">
+        <entry file="file://$PROJECT_DIR$/src/Assignment3/Process1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1536">
-              <caret line="110" column="24" selection-start-line="110" selection-start-column="24" selection-end-line="110" selection-end-column="24" />
+            <state relative-caret-position="34">
+              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Assignment3/Process0.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Assignment3/Process3.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Assignment3/Receive.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Assignment2/Device1.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Assignment2/Device2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="97" column="12" selection-start-line="97" selection-start-column="12" selection-end-line="97" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Assignment2/Device3.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1700">
-              <caret line="100" column="9" lean-forward="true" selection-start-line="100" selection-start-column="9" selection-end-line="100" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Assignment2/Receive.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1354">
-              <caret column="9" selection-start-column="9" selection-end-column="9" />
+            <state relative-caret-position="510">
+              <caret line="30" column="39" lean-forward="true" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Assignment2/Send.java">
+        <entry file="file://$PROJECT_DIR$/src/Assignment3/Send.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="11" selection-start-column="11" selection-end-column="11" />
+            <state relative-caret-position="34">
+              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Assignment3/Readfile.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Assignment2/Convert.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -183,16 +192,38 @@
         <option value="$PROJECT_DIR$/src/deef/Device3.java" />
         <option value="$PROJECT_DIR$/src/deef/MAIN.java" />
         <option value="$PROJECT_DIR$/src/deef/Device1.java" />
-        <option value="$PROJECT_DIR$/src/Assignment2/Receive.java" />
         <option value="$PROJECT_DIR$/src/Assignment2/Send.java" />
         <option value="$PROJECT_DIR$/src/Assignment2/Choose.java" />
         <option value="$PROJECT_DIR$/src/Assignment2/Device1.java" />
         <option value="$PROJECT_DIR$/src/Assignment2/Device2.java" />
         <option value="$PROJECT_DIR$/src/Assignment2/Device3.java" />
+        <option value="$PROJECT_DIR$/src/Assignment3/Device1.java" />
+        <option value="$PROJECT_DIR$/src/Assignment3/Device2.java" />
+        <option value="$PROJECT_DIR$/src/Assignment3/Device3.java" />
+        <option value="$PROJECT_DIR$/src/Assignment3/Process2.java" />
+        <option value="$PROJECT_DIR$/src/Assignment3/Process1.java" />
+        <option value="$PROJECT_DIR$/src/Assignment3/Readfile.java" />
+        <option value="$PROJECT_DIR$/src/Assignment3/Send.java" />
+        <option value="$PROJECT_DIR$/src/Assignment3/Process0.java" />
+        <option value="$PROJECT_DIR$/src/Assignment3/Process0/Convert.java" />
+        <option value="$PROJECT_DIR$/src/Assignment3/Process2/Convert.java" />
+        <option value="$PROJECT_DIR$/src/Assignment3/Convert.java" />
+        <option value="$PROJECT_DIR$/src/Assignment3/Receive.java" />
+        <option value="$PROJECT_DIR$/src/Assignment3/Process0/Receive.java" />
+        <option value="$PROJECT_DIR$/src/Assignment3/Process0/Process0.java" />
+        <option value="$PROJECT_DIR$/src/Assignment3/Process0/Readfile.java" />
+        <option value="$PROJECT_DIR$/src/Assignment3/Process1/Readfile.java" />
+        <option value="$PROJECT_DIR$/src/Assignment3/Process1/Receive.java" />
+        <option value="$PROJECT_DIR$/src/Assignment3/Process1/Process1.java" />
+        <option value="$PROJECT_DIR$/src/Assignment3/Process2/Readfile.java" />
+        <option value="$PROJECT_DIR$/src/Assignment3/Process2/Receive.java" />
+        <option value="$PROJECT_DIR$/src/Assignment3/Process2/Process2.java" />
+        <option value="$PROJECT_DIR$/src/Assignment2/Convert.java" />
+        <option value="$PROJECT_DIR$/src/Assignment2/Receive.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="953" />
     <option name="width" value="974" />
     <option name="height" value="1057" />
@@ -222,6 +253,19 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Assignment2" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Project2-ver2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project2-ver2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Assignment2" type="462c0819:PsiDirectoryNode" />
+              <item name="Receive.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
+            <path>
+              <item name="Project2-ver2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project2-ver2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Assignment3" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -230,7 +274,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542399509084" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542407444507" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -239,9 +283,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Assignment3" />
       <recent name="deef" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Akash Lohani\Programming\Java\DS-Project\Project2-ver2\src\Assignment3\Process2" />
+      <recent name="C:\Users\Akash Lohani\Programming\Java\DS-Project\Project2-ver2\src\Assignment3\Process1" />
+      <recent name="C:\Users\Akash Lohani\Programming\Java\DS-Project\Project2-ver2\src\Assignment3\Process0" />
+      <recent name="C:\Users\Akash Lohani\Programming\Java\DS-Project\Project2-ver2\src\Assignment3" />
       <recent name="C:\Users\Akash Lohani\Programming\Java\JAVA-UDEMY\Project2\src" />
     </key>
   </component>
@@ -284,19 +333,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Device2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="deef.Assignment2.Device2" />
-      <module name="Project2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="deef.Assignment2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Device3 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Assignment2.Device3" />
       <module name="Project2" />
@@ -310,12 +346,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Device3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="deef.Assignment2.Device3" />
+    <configuration name="Process0" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Assignment3.Process0.Process0" />
       <module name="Project2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="deef.Assignment2.*" />
+          <option name="PATTERN" value="Assignment3.Process0.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Process1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Assignment3.Process1.Process1" />
+      <module name="Project2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Assignment3.Process1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -324,19 +373,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Device2" />
-      <item itemvalue="Application.Device3" />
       <item itemvalue="Application.Device1 (1)" />
       <item itemvalue="Application.Device2 (1)" />
       <item itemvalue="Application.Device3 (1)" />
+      <item itemvalue="Application.Process0" />
+      <item itemvalue="Application.Process1" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Device3 (1)" />
         <item itemvalue="Application.Device2 (1)" />
         <item itemvalue="Application.Device1 (1)" />
-        <item itemvalue="Application.Device3" />
-        <item itemvalue="Application.Device2" />
+        <item itemvalue="Application.Process1" />
+        <item itemvalue="Application.Process0" />
       </list>
     </recent_temporary>
   </component>
@@ -363,27 +412,27 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="953" y="0" width="974" height="1057" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49132177" visible="true" weight="0.26258206" />
-      <window_info id="Structure" order="1" sideWeight="0.50867826" side_tool="true" visible="true" weight="0.26258206" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4914163" visible="true" weight="0.12793177" />
+      <window_info id="Structure" order="1" sideWeight="0.50858366" side_tool="true" weight="0.12793177" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" sideWeight="0.5008157" side_tool="true" weight="0.25382933" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32939914" />
       <window_info anchor="bottom" id="Debug" order="2" weight="0.22210184" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" weight="0.32939914" />
-      <window_info anchor="bottom" id="Terminal" order="6" weight="0.3336945" />
+      <window_info anchor="bottom" id="Terminal" order="6" weight="0.3304721" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="9" weight="0.32936078" />
-      <window_info anchor="bottom" x="983" y="436" width="914" height="175" id="Run" order="10" visible="true" weight="0.18851571" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.32832617" />
+      <window_info anchor="bottom" x="983" y="436" width="914" height="175" id="Run" order="10" weight="0.18851571" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -406,6 +455,12 @@
           <properties />
           <option name="timeStamp" value="40" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Assignment3/Process0/Process0.java</url>
+          <line>27</line>
+          <properties />
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
@@ -413,190 +468,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="833" selection-start-line="833" selection-end-line="833" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jrt://C:/Program Files/Java/jdk-11.0.1!/java.base/java/lang/invoke/BoundMethodHandle$Species_LL.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/lang/invoke/BoundMethodHandle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/lang/invoke/MethodHandle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="468" selection-start-line="468" selection-end-line="468" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/lang/invoke/MethodTypeForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="158" selection-start-line="158" selection-end-line="158" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/sun/nio/cs/UTF_8.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="468" selection-start-line="468" selection-end-line="468" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/io/Writer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="249" selection-start-line="249" selection-end-line="249" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/io/BufferedWriter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="119" selection-start-line="119" selection-end-line="119" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/sun/invoke/util/Wrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="297" selection-start-line="297" selection-end-line="297" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/lang/invoke/InvokerBytecodeGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="688" selection-start-line="688" selection-end-line="688" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/lang/invoke/LambdaForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="870" selection-start-line="870" selection-end-line="870" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/lang/invoke/DirectMethodHandle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="104" selection-start-line="104" selection-end-line="104" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/lang/invoke/MethodHandles.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="1102" selection-start-line="1102" selection-end-line="1102" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/lang/invoke/MethodType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="199" selection-start-line="199" selection-end-line="199" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/lang/invoke/StringConcatFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="580" selection-start-line="580" selection-end-line="580" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jrt://C:/Program Files/Java/jdk-11.0.1!/java.base/java/lang/invoke/DirectMethodHandle$Holder.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3582">
-          <caret line="506" column="110" selection-start-line="506" selection-start-column="110" selection-end-line="506" selection-end-column="110" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jrt://C:/Program Files/Java/jdk-11.0.1!/java.base/java/lang/invoke/DelegatingMethodHandle$Holder.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="184" column="18" selection-start-line="184" selection-start-column="18" selection-end-line="184" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/lang/invoke/BootstrapMethodInvoker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="98" selection-start-line="98" selection-end-line="98" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/lang/invoke/CallSite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="306" selection-start-line="306" selection-end-line="306" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/lang/invoke/MethodHandleNatives.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="247" selection-start-line="247" selection-end-line="247" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jrt://C:/Program Files/Java/jdk-11.0.1!/java.base/java/lang/invoke/Invokers$Holder.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="521" column="18" selection-start-line="521" selection-start-column="18" selection-end-line="521" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/net/InetAddress.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="1664" selection-start-line="1664" selection-end-line="1664" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/net/InetSocketAddress.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="186" selection-start-line="186" selection-end-line="186" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/net/DatagramSocket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="273" selection-start-line="273" selection-end-line="273" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/deef/Check.java" />
-    <entry file="file://$PROJECT_DIR$/src/deef/printlist_copy.java" />
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/io/BufferedOutputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="142" selection-start-line="142" selection-end-line="142" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/sun/nio/cs/StreamEncoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="103" selection-start-line="103" selection-end-line="103" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/io/OutputStreamWriter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="233">
@@ -644,27 +515,6 @@
     <entry file="file://$PROJECT_DIR$/src/deef/Assignment2/Device1.java" />
     <entry file="file://$PROJECT_DIR$/src/deef/Assignment2/Device2.java" />
     <entry file="file://$PROJECT_DIR$/src/deef/Assignment2/Device3.java" />
-    <entry file="file://$PROJECT_DIR$/src/Assignment2/Receive.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1354">
-          <caret column="9" selection-start-column="9" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Assignment2/Send.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="11" selection-start-column="11" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Assignment2/Choose.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1536">
-          <caret line="110" column="24" selection-start-line="110" selection-start-column="24" selection-end-line="110" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Assignment2/Device2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="293">
@@ -679,10 +529,223 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Assignment2/Send.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="11" selection-start-column="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Assignment3/ReadTEXT.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Assignment3/Device2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Assignment3/Device3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Assignment3/Device1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Assignment3/Process2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Assignment2/Device1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+        <state relative-caret-position="153">
+          <caret line="9" column="72" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Assignment2/Choose.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1870">
+          <caret line="110" column="24" selection-start-line="110" selection-start-column="24" selection-end-line="110" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Assignment3/Convert.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Assignment3/Process0/Send.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Assignment3/Process0/Convert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Assignment3/Process0/Readfile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Assignment3/Process0/Receive.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="59" lean-forward="true" selection-start-line="30" selection-start-column="59" selection-end-line="30" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Assignment3/Process1/Convert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Assignment3/Process1/Readfile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Assignment3/Process1/Receive.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Assignment3/Process1/Send.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Assignment3/Process2/Convert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Assignment3/Process2/Process2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Assignment3/Process0/Process0.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="24" lean-forward="true" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Assignment3/Process2/Send.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="23" lean-forward="true" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Assignment3/Process2/Receive.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Assignment3/Process2/Readfile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Assignment3/Process1/Process1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Assignment3/Process1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Assignment3/Process0.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Assignment3/Process3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Assignment3/Receive.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Assignment3/Send.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Assignment3/Readfile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Assignment2/Convert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Assignment2/Receive.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="39" lean-forward="true" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
         </state>
       </provider>
     </entry>

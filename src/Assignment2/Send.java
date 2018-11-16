@@ -22,7 +22,7 @@ public class Send implements Runnable{
     public void run(){
         try{
             //CONVERT INT[](PARAMETER) to BYTE[]
-            deef.Assignment2.Convert con = new deef.Assignment2.Convert();
+            Convert con = new Convert();
             byte[] arrb = con.intsToBytes(arr);
 
             //OBTAIN LOCAL ADDRESS
