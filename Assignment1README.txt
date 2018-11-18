@@ -13,8 +13,10 @@ $ mkdir bin
 $ javac -d bin src/assignment1/*.java
 
 3. Run the script
-3.1 chmod u+x java.sh // need to assign execute permission to script
-3.2 ./java.sh
+3.1 Assign execute permission to script
+$ chmod u+x java.sh 
+3.2 Run the shell script
+$ ./java.sh
 
 
 This will run 3 processes opened in 3 different terminals and demonstrate the output of 3 when delivered as
