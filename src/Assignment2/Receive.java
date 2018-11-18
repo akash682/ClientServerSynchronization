@@ -48,7 +48,6 @@ class Recieve implements Runnable {
                                 //ADD TO GLOBAL LIST
                                 Device1.inuse_list0 = true;
                                 Device1.myList0.add(rec_vec);
-                                System.out.println("Added Vector to list");
                                 Device1.inuse_list0 = false;
                                 break;
                             }
@@ -66,7 +65,6 @@ class Recieve implements Runnable {
                                 //ADD TO GLOBAL LIST
                                 Device2.inuse_list1 = true;
                                 Device2.myList1.add(rec_vec);
-                                System.out.println("Added Vector to list");
                                 Device2.inuse_list1 = false;
                                 break;
                             }
@@ -85,7 +83,6 @@ class Recieve implements Runnable {
                                 //ADD TO GLOBAL LIST
                                 Device3.inuse_list2 = true;
                                 Device3.myList2.add(rec_vec);
-                                System.out.println("Added Vector to list");
                                 Device3.inuse_list2 = false;
                                 break;
                             }

@@ -24,9 +24,10 @@ public class Device1 {
         int port2 = 7000;
         int[] vec0_result = new int[3];
 
+        //INITIALVECTOR PRINT
+        System.out.println("Initial Vector :" + Arrays.toString(vec0) + "\n---------------------------");
+
         //RECEIVE & ADDLIST
-        System.out.println("Running Receive Thread");
-        //RECEIVE THREAD RUN
         Recieve rec = new Recieve(port0, p_id);
         Thread th0 = new Thread(rec);
         th0.start();
@@ -36,11 +37,6 @@ public class Device1 {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-
-//        //TEST PRINT by Thread LIST(STORING RECEIVED ARRAY)
-//        printlist pr = new printlist();
-//        Thread th1 = new Thread(pr);
-//        th1.start();
 
         //CHOOSE & MODIFY
         Choose ch = new Choose(p_id);
@@ -57,8 +53,11 @@ public class Device1 {
         }else {
             inuse_vec0 = true;
             vec0[p_id] += 1;
+            System.out.println("---------------------------\nLocal Event Occured!");
+            System.out.println("Current Vector :" + Arrays.toString(Device1.vec0)+ "\n------------------------");
             inuse_vec0 = false;
         }
+
 
         //SEND 0 -> 1
         if(inuse_vec0 == true){
@@ -113,5 +112,7 @@ public class Device1 {
     }
 
 }
+
+
 
 
