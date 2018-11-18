@@ -90,7 +90,7 @@ class Receive implements Runnable {
         try (DatagramSocket socket = new DatagramSocket(port_rec)) {
             while (true) {
                 if (Process0.loop0 <= 100) {
-                    System.out.println("---------------------------\nLoop :" + Process0.loop0);
+                    System.out.println("----------------------------\nLoop :" + Process0.loop0);
                     if (Process0.loop0 != 1) {
                         System.out.println("WAITING FOR THE KEY...");
                         //PREPARE UDP BUFFER TO RECIEVE

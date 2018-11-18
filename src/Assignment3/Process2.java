@@ -64,7 +64,7 @@ class Receive2 implements Runnable {
         try (DatagramSocket socket = new DatagramSocket(port_rec)) {
             while (true) {
                 if (Process2.loop2 <= 100) {
-                    System.out.println("---------------------------\nLoop :" + Process2.loop2);
+                    System.out.println("----------------------------\nLoop :" + Process2.loop2);
                     //PREPARE UDP BUFFER TO RECIEVE
                     byte[] buffer = new byte[4];
                     DatagramPacket packet0 = new DatagramPacket(buffer, buffer.length);
