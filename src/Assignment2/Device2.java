@@ -55,7 +55,7 @@ public class Device2 {
         }else {
             inuse_vec1 = true;
             vec1[p_id] += 1;
-            System.out.println("------------------------\nLocal Event Occured!");
+            System.out.println("---------------------------\nLocal Event Occured!");
             System.out.println("Current Vector :" + Arrays.toString(Device2.vec1)+ "\n------------------------");
             inuse_vec1 = false;
         }

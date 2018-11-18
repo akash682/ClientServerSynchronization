@@ -25,7 +25,7 @@ public class Device3 {
         int[] vec2_result = new int[3];
 
         //INITIALVECTOR PRINT
-        System.out.println("Initial Vector :" + Arrays.toString(vec2) + "\n ----------------------------");
+        System.out.println("Initial Vector :" + Arrays.toString(vec2) + "\n---------------------------");
 
         //RECEIVE & ADDLIST
         Recieve rec = new Recieve(port2, p_id);
@@ -53,7 +53,7 @@ public class Device3 {
         }else {
             inuse_vec2 = true;
             vec2[p_id] += 1;
-            System.out.println("------------------------\nLocal Event Occured!");
+            System.out.println("---------------------------\nLocal Event Occured!");
             System.out.println("Current Vector :" + Arrays.toString(Device3.vec2) + "\n------------------------");
             inuse_vec2 = false;
         }
