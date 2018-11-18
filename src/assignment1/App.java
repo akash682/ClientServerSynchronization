@@ -19,13 +19,13 @@ public class App {
 		// TODO Auto-generated method stub
 		LogManager.getLogManager().reset();
 		try {
-			Process p1 = new Process(1, 1234, "224.0.0.1");	
+			Process p1 = new Process(1, 1234, "224.0.0.1");
 			p1.startProcessThread();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+
 	}
 
 }

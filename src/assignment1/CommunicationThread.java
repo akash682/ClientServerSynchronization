@@ -17,29 +17,16 @@ public class CommunicationThread extends Thread {
 	MulticastSocket multicastSock;
 	int pid;
 
-	// Keep Track of ACK of its own Issued Message
-	int ACKrev;
-
 	private static BlockingQueue<String> sendClockReplyQueue;
 
 	public CommunicationThread(MulticastSocket multicastSock, int pid) {
 		this.multicastSock = multicastSock;
 		this.pid = pid;
 
-		ACKrev = -1; // Maintains number of ACK received for the issued message
-
-	}
-
-	public int getACKrev() {
-		return ACKrev;
-	}
-
-	public void setACKrev(int aCKrev) {
-		ACKrev = aCKrev;
 	}
 
 	public void run() {
-		logger.info("PID:" + pid + " Communication Receive Thread Ready");
+		// logger.info("PID:" + pid + " Communication Receive Thread Ready");
 		while (true) {
 
 			byte[] buffer = new byte[100];
@@ -48,7 +35,7 @@ public class CommunicationThread extends Thread {
 			try {
 				multicastSock.receive(packet);
 				String receivedMessage = new String(buffer, 0, packet.getLength());
-				logger.info("Received Message by PID"+ pid + ":"+receivedMessage);
+				// logger.info("Received Message by PID"+ pid + ":"+receivedMessage);
 				String[] splitM = receivedMessage.split(" ");
 				Message recM = null;
 				if (splitM[0].compareTo("MSG") == 0) {
@@ -56,54 +43,51 @@ public class CommunicationThread extends Thread {
 							Integer.parseInt(splitM[4]));
 					Process.Ci.compareTimeStamp(Integer.parseInt(splitM[4]));
 					Process.recvQueue.put(recM);
-				} else if (splitM[0].compareTo("ACK") == 0) {
+				} else if (splitM[0].compareTo("ACK") == 0 && !Process.recvQueue.isEmpty()
+						&& Process.recvQueue.peek().getSenderPID() == pid) {// We need 3 ACK to deliver our own message
 					try {
 						Process.ackQueue.put(splitM[1]);
+						Process.Ci.compareTimeStamp(Integer.parseInt(splitM[2]));
 						Message m = null;
-						// If ACK is for my own issued message
-						if (!Process.recvQueue.isEmpty() && Process.recvQueue.peek().getSenderPID() == pid)
-							m = Process.recvQueue.take();
-						if (m==null)
-							continue;
-						logger.info("Size of Receive Queue : " + String.valueOf(Process.recvQueue.size()));
-						deliveryToApplication(m);
+						logger.info("Size of ACK Queue : " + String.valueOf(Process.ackQueue.size()));
+
+//						if (!Process.recvQueue.isEmpty()) {
+//							logger.info(" receive Queue content head: " + Process.recvQueue.peek().getSenderPID() + "."
+//									+ Process.recvQueue.peek().getLogicalClockValue());
+//							logger.info("1?" + String.valueOf(Process.ackQueue.contains("1")) + " " + "2?"
+//									+ String.valueOf(Process.ackQueue.contains("2")) + "3?"
+//									+ String.valueOf(Process.ackQueue.contains("3")));
+//						}
+
+						// If ACK is for my own issued message , deliver message
+						if (!Process.recvQueue.isEmpty() && Process.recvQueue.peek().getSenderPID() == pid) {
+							logger.info("1?" + String.valueOf(Process.ackQueue.contains("1")) + " " + "2?"
+									+ String.valueOf(Process.ackQueue.contains("2")) + "3?"
+									+ String.valueOf(Process.ackQueue.contains("3")));
+							if (Process.ackQueue.size() == 3) {//deliver message if 3 ack received
+								try {
+									m = Process.recvQueue.take();
+								
+									System.out.println(pid + ": " + m.getSenderPID() + "." + m.getLogicalClockValue());
+									Process.ackQueue.clear();
+								} catch (Exception e) {
+									// TODO Auto-generated catch block
+									e.printStackTrace();
+								}
+							}
+						}
+
 					} catch (InterruptedException e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
 					}
 				}
 
-				// System.out.println(Process.recvQueue.size());
-				// System.out.println(Process.recvQueue.peek().getData());
-
-				/*
-				 * // Send ACK for the first message on the Queue. if
-				 * (!Process.recvQueue.isEmpty()) { try { sendACK(Process.recvQueue.take()); }
-				 * catch (InterruptedException e) { // TODO Auto-generated catch block
-				 * e.printStackTrace(); } logger.info(receivedMessage); }
-				 */
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}
-	}
-
-	private void deliveryToApplication(Message m) {
-		// TODO Auto-generated method stub
-		logger.info("Size of ACKQUE of PID"+String.valueOf(pid)+" :"+String.valueOf(Process.ackQueue.size()));
-		if (!Process.recvQueue.isEmpty())
-			if (Process.ackQueue.size() == 3) {
-				try {
-		
-					System.out.println(pid + ": " + m.getSenderPID() + "."
-							+ m.getLogicalClockValue());
-				} catch (Exception e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-			}
-
 	}
 
 }

@@ -25,9 +25,9 @@ public class SenderThread extends Thread {
 
 	private List<Integer> PORTAll;
 	boolean messageIssued;
-	
-	boolean ackSent;//Flag fOR ACK sent for own message
-	boolean delivered;//Flag fOR its own msg delivered
+
+	boolean ackSent;// Flag fOR ACK sent for own message
+	boolean delivered;// Flag fOR its own msg delivered
 
 	public SenderThread(MulticastSocket multicastSock, InetAddress group, int pid, int port) {
 		this.multicastSock = multicastSock;
@@ -41,18 +41,25 @@ public class SenderThread extends Thread {
 
 		messageIssued = false;
 		ackSent = false;
-		delivered= true;
+		delivered = true;
 	}
 
 	public void run() {
-		logger.info("PID:" + pid + " Sender Thread Ready");
+		// logger.info("PID:" + pid + " Sender Thread Ready");
 		String msg = null;
 		while (true) {
 
 			try {
 				// Issue Message
 				if (messageIssued == false && delivered == true) {
+					try {
+						Thread.sleep(100);
+					} catch (InterruptedException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
 					msg = IssueMessage();
+					ackSent = false;
 					messageIssued = true;
 					delivered = false;
 					// MultiCast Message
@@ -61,11 +68,11 @@ public class SenderThread extends Thread {
 						multicastSock.send(packet);
 					}
 				}
-				// Send ACK
+				// Send ACK| multiCast ACK 
 				if (!Process.recvQueue.isEmpty()) {
-					Message recvMessage= Process.recvQueue.take();
+					Message recvMessage = Process.recvQueue.peek();
 					if (recvMessage.getSenderPID() == pid && ackSent == false) {
-						//Event Occur Increment by 1
+						// Event Occur Increment by 1
 						Process.Ci.incrementClock();
 						messageIssued = false;
 						msg = "ACK " + pid + " " + Process.Ci.getLocalClock();
@@ -74,18 +81,22 @@ public class SenderThread extends Thread {
 						multicastSock.send(packet);
 						ackSent = true;
 					} else if (recvMessage.getSenderPID() != pid) {
-						//Event Occur Increment by 1
+						// Event Occur Increment by 1
 						Process.Ci.incrementClock();
-						msg = "ACK " + pid +" "+ Process.Ci.getLocalClock();
-			
-						DatagramPacket packet = new DatagramPacket(msg.getBytes(), msg.length(), group,
-								recvMessage.getSenderPort());
-						multicastSock.send(packet);
+						msg = "ACK " + pid + " " + Process.Ci.getLocalClock();
+						for (int port : PORTAll) {
+							if(port == recvMessage.getSenderPort())
+								continue;
+							DatagramPacket packet = new DatagramPacket(msg.getBytes(), msg.length(), group, port);
+							multicastSock.send(packet);
+						}
+						
+						recvMessage = Process.recvQueue.take();
 						deliveryToApplication(recvMessage);
 
 					}
 				}
-	
+
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -98,9 +109,8 @@ public class SenderThread extends Thread {
 		// TODO Auto-generated method stub
 
 		try {
-			
-			System.out.println(
-					pid + ": " + m.getSenderPID() + "." + m.getLogicalClockValue());
+
+			System.out.println(pid + ": " + m.getSenderPID() + "." + m.getLogicalClockValue());
 			delivered = true;
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
@@ -116,14 +126,16 @@ public class SenderThread extends Thread {
 
 	private String IssueMessage() {
 		// TODO Auto-generated method stub
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		Process.Ci.incrementClock();
 		return "MSG " + pid + " " + PORT + " " + randomSeriesForThreeCharacter() + " " + Process.Ci.getLocalClock();
 
 	}
 
-	private void sendACK(Message take) {
-		// TODO Auto-generated method stub
-
-	}
 
 }

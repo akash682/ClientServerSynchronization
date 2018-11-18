@@ -42,9 +42,9 @@ public class Process {
 
 	// recvQueue, Messages received are buffered,
 	public static PriorityBlockingQueue<Message> recvQueue;
-	//Sort the recvQueue as per the Process Id
+	// Sort the recvQueue as per the Process Id
 	Comparator<Message> comparator;
-	
+
 	public static BlockingQueue<String> ackQueue;
 
 	public Process(int PID, int PORT, String IPaddress) throws IOException {
@@ -69,8 +69,8 @@ public class Process {
 		this.comparator = new MessageComparator();
 
 		recvQueue = new PriorityBlockingQueue<Message>(100, comparator);
-		
-		ackQueue = new ArrayBlockingQueue<String>(100,true);
+
+		ackQueue = new ArrayBlockingQueue<String>(100, true);
 		System.out.println("Process " + PID + " with local clock Ci:" + Ci.getLocalClock() + " started");
 	}
 
@@ -88,14 +88,22 @@ public class Process {
 
 	public void startProcessThread() {
 		commthread.start();
+		try {
+			Thread.sleep(100);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		senderThread.start();
 	}
 
 }
-
+//Sorting the queue based priority
 class MessageComparator implements Comparator<Message> {
 	@Override
 	public int compare(Message a, Message b) {
-		return a.getSenderPID() - b.getSenderPID();
+		if (a.getLogicalClockValue() == b.getLogicalClockValue())
+			return a.getSenderPID() - b.getSenderPID();
+		return a.getLogicalClockValue() - b.getLogicalClockValue();
 	}
 }

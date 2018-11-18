@@ -15,9 +15,15 @@ public class P3 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		// TODO Auto-generated method stub
-				LogManager.getLogManager().reset();
+		LogManager.getLogManager().reset();
 		Process p3;
 		try {
+			try {
+				Thread.sleep(10);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 			p3 = new Process(3, 1236, "224.0.0.1");
 			p3.startProcessThread();
 		} catch (IOException e) {
