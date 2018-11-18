@@ -122,7 +122,7 @@ class Receive2 implements Runnable {
                     }
 
                 } else {
-                    System.exit(-1);
+                    System.exit(0);
                 }
             }
 
