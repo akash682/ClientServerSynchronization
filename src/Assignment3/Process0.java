@@ -102,7 +102,7 @@ class Receive implements Runnable {
 					System.out.println("Received key :" + key[0]);
 				} else {
 					key = Process0.key_initial;
-					Thread.sleep(10000);
+					Thread.sleep(1000);
 				}
 
 				if (Process0.loop0 <= Process0.pre_loop0) {

@@ -26,3 +26,36 @@ Current PID(i.e., pid of the process): (PID.EventID) where PID is message sender
 Testing Scenario: 
 If you close one terminal, The processes will be stuck at particular output waiting for the ack (that it will never received)
 When all terminals are open, the processes will keep issues messages and the messages will be delivered as per the totally ordered multicast algorithm. 
+
+
+Assignment 2 
+1. Go to project directory 
+$ cd logical-clock/
+
+2. Compile Java Files 
+2.1 First create a bin directory
+$ mkdir bin
+2.2 Compile the project java files to bin directory 
+$ javac -d bin src/Assignment2/*.java
+
+3. Run the script
+3.1 Assign execute permission to script
+$ chmod u+x assign2.sh 
+3.2 Run the shell script
+$ ./assign2.sh
+
+Assignment 3 
+1. Go to project directory 
+$ cd logical-clock/
+
+2. Compile Java Files 
+2.1 First create a bin directory
+$ mkdir bin
+2.2 Compile the project java files to bin directory 
+$ javac -d bin src/Assignment3/*.java
+
+3. Run the script
+3.1 Assign execute permission to script
+$ chmod u+x assign3.sh 
+3.2 Run the shell script
+$ ./assign3.sh
