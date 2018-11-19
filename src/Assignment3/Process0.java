@@ -163,7 +163,6 @@ class Receive implements Runnable {
 
 			}
 
-			System.exit(0);
 
 		} catch (SocketException e) {
 			System.out.println("SocketException: " + e.getMessage());

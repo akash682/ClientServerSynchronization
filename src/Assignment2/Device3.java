@@ -63,7 +63,6 @@ public class Device3 {
 		th0.stop();
 		th2.stop();
 
-		System.exit(0);
 
 	}
 
